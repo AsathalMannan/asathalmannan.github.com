@@ -3,5 +3,13 @@ html, body{
 }
 
 #top{
-	background-image: url('img/topsection.jpg');
+	background: url('../img/DSC_0036-01.jpeg') no-repeat center right;
+	width: 100%;
+	height: 100vh;
 }
+
+/*#top > .overlay{
+	background: rgba(10, 10, 10, 0.7);
+	width: 100%;
+	height: 100vh;
+}*/
