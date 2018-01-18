@@ -3,9 +3,10 @@
 html, body{
 	width: 100%;
 	height: 100%;
-	background: #56ab2f;  /* fallback for old browsers */
-	background: -webkit-linear-gradient(to right, #a8e063, #56ab2f);  /* Chrome 10-25, Safari 5.1-6 */
-	background: linear-gradient(to right, #a8e063, #56ab2f); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	background: #457fca;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #5691c8, #457fca);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #5691c8, #457fca); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 	overflow-x: hidden;
 
 }
@@ -17,6 +18,19 @@ html, body{
 	border-radius: 10px;
 }
 
+section{
+	height: auto;
+	width: 100%;
+}
+
+.main-menu{
+	position: absolute;
+	background-color: white;
+	z-index: 1;
+	height: auto;
+	margin-right: 0;
+}
+
 #top{
 	/*background: url('../img/DSC_0036-01.jpeg') no-repeat center right;*/
 	width: 100%;
@@ -26,20 +40,28 @@ html, body{
 
 .font-title{
 	font-weight: 700;
-    font-size: 3em;
+    font-size: 4em;
 }
 
 .font-color-green{
 	color: #56ab2f;
 }
 
+.font-color-blue{
+	color: #5691c8;
+}
+
 .h-80{
 	height: 85vh;
 }
 
-#top > .container-fluid > .row > .social-bar{
-	position: absolute;
+.m-50{
+	padding-top: 20vh !important;
 }
+
+/*#top > .container-fluid > .row > .social-bar{
+
+}*/
 
 .social-bar a{
 	color: #222;
