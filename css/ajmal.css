@@ -1,4 +1,5 @@
  @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+ @import url('https://fonts.googleapis.com/css?family=Dosis:300,400,600,700');
 
 html, body{
 	width: 100%;
@@ -6,10 +7,30 @@ html, body{
 	background: #00c6ff;  /* fallback for old browsers */
 	background: -webkit-linear-gradient(to right, #0072ff, #00c6ff);  /* Chrome 10-25, Safari 5.1-6 */
 	background: linear-gradient(to right, #0072ff, #00c6ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+	font-family: 'Open Sans', sans-serif;
 
 	overflow-x: hidden;
 
+}
+
+h1,h2,h3,h4,h5{
+	font-family: 'Dosis', sans-serif;
+	font-weight: 700;
+}
+
+p{
+	font-family: 'Dosis', sans-serif;
+	font-weight: 300;
+	font-size: 24px;
+}
+
+footer{
+	font-family: 'Dosis', sans-serif;
+	font-weight: 300;
+}
+
+.font-dosis{
+	font-family: 'Dosis', sans-serif;
 }
 
 .foreground{
@@ -17,11 +38,6 @@ html, body{
 	width: 99%;
 	height: auto;
 	border-radius: 10px;
-}
-
-section{
-	height: auto;
-	width: 100%;
 }
 
 .main-menu{
@@ -33,15 +49,32 @@ section{
 }
 
 #top{
-	/*background: url('../img/DSC_0036-01.jpeg') no-repeat center right;*/
 	width: 100%;
-	height: 100vh;
+	height: 100%;
     font-family: 'Open Sans', sans-serif;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background: url('../img/geometry2.png') repeat;
+    animation: bgscrollanimate 15s linear infinite;
+    animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes bgscrollanimate {
+from {background-position: 0 0;}
+to {background-position: -180px 0px;}
+}
+
+@keyframes bgscrollanimate {
+from {background-position: 0 0;}
+to {background-position: -180px 0px;}
+
 }
 
 .font-title{
+    font-family: 'Dosis', sans-serif;
 	font-weight: 700;
     font-size: 4em;
+    line-height: 1.2em;
 }
 
 .font-color-green{
@@ -64,6 +97,10 @@ section{
 
 }*/
 
+.social-bar{
+	/*background-color: #fff;*/
+}
+
 .social-bar a{
 	color: #222;
 }
@@ -77,3 +114,21 @@ section{
 	width: 100%;
 	height: 100vh;
 }*/
+
+/*About me*/
+.contacts{
+	padding: 5px 10px 5px 10px;
+	background-color: #0072ff;
+	color: #fff;
+	border-radius: 15px;
+}
+
+.progress-bar, .progress{
+	border-radius: 5px !important;
+	height: 5px;
+}
+
+.btn{
+	border-radius: 1.5rem !important;
+	color: white !important;
+}
