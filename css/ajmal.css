@@ -24,6 +24,10 @@ p{
 	font-size: 24px;
 }
 
+text{
+	margin-right: 100px;
+}
+
 footer{
 	font-family: 'Dosis', sans-serif;
 	font-weight: 300;
@@ -68,6 +72,13 @@ to {background-position: -180px 0px;}
 from {background-position: 0 0;}
 to {background-position: -180px 0px;}
 
+}
+
+.img-thumbnail{
+	height: 15em !important;
+	border-radius: 50%;
+	background-color: #0072ff !important;
+	border: 0px !important;
 }
 
 .font-title{
@@ -121,6 +132,10 @@ to {background-position: -180px 0px;}
 	background-color: #0072ff;
 	color: #fff;
 	border-radius: 15px;
+}
+
+.font-size-contacts{
+	font-size: 1em !important;
 }
 
 .progress-bar, .progress{
