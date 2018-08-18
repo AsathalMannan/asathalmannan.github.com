@@ -4,13 +4,7 @@
 html, body{
 	width: 100%;
 	height: 100%;
-	background: #00c6ff;  /* fallback for old browsers */
-	background: -webkit-linear-gradient(to right, #0072ff, #00c6ff);  /* Chrome 10-25, Safari 5.1-6 */
-	background: linear-gradient(to right, #0072ff, #00c6ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-	font-family: 'Open Sans', sans-serif;
-
 	overflow-x: hidden;
-
 }
 
 h1,h2,h3,h4,h5{
@@ -21,11 +15,15 @@ h1,h2,h3,h4,h5{
 p{
 	font-family: 'Dosis', sans-serif;
 	font-weight: 300;
-	font-size: 24px;
+	font-size: 18px;
 }
 
 text{
 	margin-right: 100px;
+}
+
+section{
+	margin-left: 2em;
 }
 
 footer{
@@ -37,24 +35,39 @@ footer{
 	font-family: 'Dosis', sans-serif;
 }
 
-.foreground{
-	background: #fff;
-	width: 99%;
-	height: auto;
-	border-radius: 10px;
+.main-menu{
+	position: fixed;
+	display: flex;
+	background-color: #000;
+	z-index: 1;
+	height: 100%;
 }
 
-.main-menu{
-	position: absolute;
-	background-color: white;
-	z-index: 1;
-	height: auto;
-	margin-right: 0;
+.main-menu a{
+	display: block;
+	color: #fff;
+	line-height: auto;
+	writing-mode: vertical-lr;
+	transform: rotate(180deg);
+	transform-origin: 35%;
+	margin: 0px 1px 0px 13px;
+	padding: 20px 16px 20px 14px;
+}
+
+.main-menu a:hover, .main-menu .active{
+	background: #0072ff;
+	/* padding-left: -20px; */
+}
+
+.scrollspy-example {
+	position: relative;
+	height: 250px;
+	overflow: auto;
 }
 
 #top{
 	width: 100%;
-	height: 100%;
+	height: 100vh;
     font-family: 'Open Sans', sans-serif;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
@@ -64,14 +77,13 @@ footer{
 }
 
 @-webkit-keyframes bgscrollanimate {
-from {background-position: 0 0;}
-to {background-position: -180px 0px;}
+	from {background-position: 0 0;}
+	to {background-position: -180px 0px;}
 }
 
 @keyframes bgscrollanimate {
-from {background-position: 0 0;}
-to {background-position: -180px 0px;}
-
+	from {background-position: 0 0;}
+	to {background-position: -180px 0px;}
 }
 
 .img-thumbnail{
@@ -108,10 +120,6 @@ to {background-position: -180px 0px;}
 
 }*/
 
-.social-bar{
-	/*background-color: #fff;*/
-}
-
 .social-bar a{
 	color: #222;
 }
@@ -147,3 +155,14 @@ to {background-position: -180px 0px;}
 	border-radius: 1.5rem !important;
 	color: white !important;
 }
+
+.about-divider{
+	display: inline-block;
+	transform: skew(-20deg);
+	height: 10em;
+	width: 1px;
+	margin-top: 3em;
+	background: #aaa;
+}
+
+/* my works */
