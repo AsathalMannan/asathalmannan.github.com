@@ -70,9 +70,9 @@ footer{
 	padding: 20px 10px 20px 10px; /*padding: 20px 16px 20px 14px;*/
 }
 
-.main-menu a:hover, .main-menu .active{
+.main-menu a:hover, .main-menu a.active{
 	background: #0072ff;
-	/* padding-left: -20px; */
+	 /* padding-left: -20px; */
 }
 
 @supports (-webkit-appearance:none) {
@@ -96,6 +96,12 @@ footer{
     background: url('../img/geometry2.png') repeat;
     animation: bgscrollanimate 15s linear infinite;
     animation-fill-mode: forwards;
+}
+
+@media (max-width: 544px) {
+	#top{
+		height: auto;
+	}
 }
 
 @-webkit-keyframes bgscrollanimate {
@@ -194,6 +200,19 @@ footer{
 	background: #aaa;
 }
 
+.qualification span{
+	padding: 5px 20px;
+	border-radius: 20px;
+	background: #f7f7f7;
+	transition: all 200ms linear;
+	cursor: pointer;
+	/* margin: 0px 10px; */
+}
+
+.qualification span:hover{
+	background: #f0f0f0;
+}
+
 /* myworks */
 
 .card{
@@ -207,6 +226,11 @@ footer{
 
 .shadow-box:hover{
 	box-shadow:5px 12px 20px rgba(36,37,38,0.13);
+}
+
+.disabled{
+	cursor: not-allowed;
+	pointer-events: none;
 }
 
 /* footer */
