@@ -1,3 +1,6 @@
+/* Ajmal Hussain Portfolio site's JavaScript - 2018*/
+/* Author: Ajmal Hussain, https://ajmalhussain.in */
+
 $('body').scrollspy({ target: '#vertical-nav' })
 
 // navbar menu smooth scroller
