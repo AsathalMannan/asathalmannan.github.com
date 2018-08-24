@@ -186,6 +186,20 @@ footer{
 }
 
 /*About me*/
+.collapsing-row{
+	height: 51vh;
+	overflow: hidden;
+}
+
+.expand-btn{
+	font-size: 30px;
+	height: 2em;
+	width: 2em;
+	background: #000;
+	border-radius: 30px;
+	cursor: pointer;
+}
+
 .contacts{
 	padding: 5px 10px 5px 10px;
 	background-color: #0072ff;
@@ -217,12 +231,18 @@ footer{
 }
 
 .qualification > span{
-	padding: 5px 20px;
-	border-radius: 20px;
+	display: block;
+	padding: 15px 20px;
+	/* border-radius: 20px; */
 	background: #f7f7f7;
 	transition: all 200ms linear;
 	cursor: pointer;
+	font-weight: 600;
 	/* margin: 0px 10px; */
+}
+
+.qualification > span > small{
+	font-style: italic;
 }
 
 .qualification > span:hover{

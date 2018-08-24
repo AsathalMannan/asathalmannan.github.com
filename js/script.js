@@ -13,3 +13,21 @@ $('a[href^="#"]').on('click', function(event) {
         }, 1000);
     }
 });
+
+// Tooltip activator
+$(function(){
+    $('[data-toggle="tooltip"]').tooltip();
+  });
+
+// expand section
+$('.expand-btn').click(function(){
+    if ($(".collapsing-row").height() != "51vh") {
+        console.log("entered if");
+        $('.collapsing-row').animate({height:'90vh'}, 500);
+        
+    }
+    else if ($(".collapsing-row").height() != "90vh"){
+        console.log("entered else");
+        $('.collapsing-row').animate({height:'51vh'}, 500);
+    }
+});
