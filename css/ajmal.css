@@ -49,6 +49,19 @@ footer{
 	font-weight: 300;
 }
 
+.small-line-height{
+	line-height: 12px;
+}
+
+.small-text{
+	font-size: 10px;
+	background: none !important;
+}
+
+.medium-text{
+	font-size: 12px;
+}
+
 .font-dosis{
 	font-family: 'Dosis', sans-serif;
 }
@@ -190,7 +203,7 @@ footer{
 }
 
 .btn{
-	border-radius: 1.5rem !important;
+	/* border-radius: 1.5rem !important; */
 	color: white !important;
 }
 
@@ -203,7 +216,7 @@ footer{
 	background: #aaa;
 }
 
-.qualification span{
+.qualification > span{
 	padding: 5px 20px;
 	border-radius: 20px;
 	background: #f7f7f7;
@@ -212,7 +225,7 @@ footer{
 	/* margin: 0px 10px; */
 }
 
-.qualification span:hover{
+.qualification > span:hover{
 	background: #f0f0f0;
 }
 
