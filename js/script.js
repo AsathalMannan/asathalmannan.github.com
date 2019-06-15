@@ -32,17 +32,21 @@
 //     }
 // });
 
-$(".btn-myWorks").click(function(){
-    console.log("btn myworks working");
-    $('.myself').animate({
-        left: '-50%'
-    }, 500, function() {
-        $('.myself').css('left', '150%');
-        $('.myself').appendTo('body');
-    });
+// $(".btn-myWorks").click(function(){
+//     console.log("btn myworks working");
+//     $('.myself').animate({
+//         left: '-50%'
+//     }, 500, function() {
+//         $('.myself').css('left', '150%');
+//         $('.myself').appendTo('body');
+//     });
 
-    $('.myself').next().animate({
-        left: '50%'
-    }, 500);
-    // $(".myworks").css("margin-left", "-100vw");
+//     $('.myself').next().animate({
+//         left: '50%'
+//     }, 500);
+//     // $(".myworks").css("margin-left", "-100vw");
+// });
+
+$(document).load(function(){
+    
 });

@@ -67,11 +67,11 @@ body{
 	line-height: 48px;
 }
 
-#top .top-title-block span:last-child{
+#top .top-title-block span:nth-child(3){
 	font-size: 16px;
 	line-height: 22px;
 	opacity: 0.5;
-	margin-top: 1em;
+	margin-top: 1.5em;
 }
 
 #top .top-title-block .vertical-splitline{
@@ -83,13 +83,24 @@ body{
 	margin: auto 5em auto 1em;
 }
 
-#top .top-title-block .profile-pic{
+#top .top-title-block .profile-pic-container{
 	position: absolute;
+	width: 230px;
+	height: 292px;
+	margin-left: 3.5em;
+	transform: skew(-.362rad);
+	border-radius: 10px;
+}
+
+#top .top-title-block .profile-pic-container > .profile-pic{
 	background: url('../img/pic.svg') no-repeat center center;
 	background-size: contain;
-	width: 347px;
+	width: 339px;
 	height: 292px;
-	margin-left: 0.5em;
+	transform: skew(.362rad);
+	position: absolute;
+	z-index: -1;
+	left: -55px;
 }
 
 #top .top-title-block .right-arrow{
@@ -102,7 +113,7 @@ body{
 }
 
 .btn-scrollDown{
-	margin-top: 14em;
+	margin-top: 10em;
 }
 
 .down-arrow{
