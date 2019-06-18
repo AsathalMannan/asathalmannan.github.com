@@ -77,7 +77,7 @@ $(document).ready(function(){
       $(".langSwitch").html("தமிழ்");
       $("html").attr("lang", "en");
 
-      $("body, .greet, .myname, .position").removeClass("tamil");
+      $("body, .greet, .myname, .position, .btn-myWorks-text, .btn-scrollDown-text").removeClass("tamil");
 
       var engContent = fullContent['english'];
       $(".greet").text(engContent['greet']);
@@ -93,7 +93,7 @@ $(document).ready(function(){
       $(".langSwitch").html("English");
       $("html").attr("lang", "ta");
 
-      $("body, .greet, .myname, .position").addClass("tamil");
+      $("body, .greet, .myname, .position, .btn-myWorks-text, .btn-scrollDown-text").addClass("tamil");
 
       var engContent = fullContent['tamil'];
       $(".greet").text(engContent['greet']);
@@ -103,4 +103,30 @@ $(document).ready(function(){
       $(".btn-scrollDown-text").html(engContent['downarrow']);
       $(".aboutme").html(engContent['aboutme']);
     }
+});
+
+$('body').overlayScrollbars({ 
+  resize               : "none",
+  sizeAutoCapable      : true,
+  clipAlways           : true,
+  normalizeRTL         : true,
+  paddingAbsolute      : false,
+  autoUpdate           : true,
+  autoUpdateInterval   : 33, 
+  nativeScrollbarsOverlaid : {
+      showNativeScrollbars   : false,
+      initialize             : true 
+  },
+  overflowBehavior : {
+      x : "hidden",
+      y : "scroll"
+  },
+  scrollbars : {
+      // visibility       : "hidden",
+      autoHide         : "leave",
+      autoHideDelay    : 800,
+      dragScrolling    : true,
+      clickScrolling   : false,
+      touchSupport     : true
+  }
 });
