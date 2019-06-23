@@ -5,15 +5,75 @@
         "position"  : "Web Designer, Tech Head at<br>Echevariea Educations Private Limited",
         "rightarrow" : "Click to view My Works",
         "downarrow" : "Scroll down to know more",
-        "aboutme"   :  "My name is Ajmal Hussain and I'm a self-taught Web Designer. I hold a Bachelor's degree in Computer Science and Engineering from Meenakshi Sundararajan Engineering College and I've also done my diploma in Electronics and Communication Engineering at CPT College, Taramani. Mashallah, I have enough skills in web designing, that i can design my imagination and bring it to life. All of my skills mentioned here were learnt on my own through blogs, YouTube videos, Github Repos and Stackoverflow."
+        "leftarrow" : "Click to go back",
+        "aboutme"   :  "My name is Ajmal Hussain and I'm a self-taught Web Designer. I hold a Bachelor's degree in Computer Science and Engineering from Meenakshi Sundararajan Engineering College and I've also done my diploma in Electronics and Communication Engineering at CPT College, Taramani. Mashallah, I have enough skills in web designing, that i can design my imagination and bring it to life. All of my skills mentioned here were learnt on my own through blogs, YouTube videos, Github Repos and Stackoverflow.",
+        "myworks"   : "My Works",
+        "myworks-categories"   : [ "Web Designs", "Mobile App Designs", "Web App Designs" ],
+        "myworks-webdesigns" : {
+            "0" : {
+                "title" : "Thirukkural",
+                "description" : "Using JSON and JS",
+                "imgFile" : "Thirukkural.png"
+            },
+            "1" : {
+                "title" : "MSEC",
+                "description" : "Just Redisgn of my college site using CSS, JS",
+                "imgFile" : "MSEC.png"
+            },
+            "2" : {
+                "title" : "Hussain Lodge",
+                "description" : "Just Lodge information site using CSS, JS",
+                "imgFile" : "hl.png"
+            },
+            "3" : {
+                "title" : "SGS Pluss",
+                "description" : "A github page fo SGSPlus using CSS, JS",
+                "imgFile" : "SGSPLUSS.png"
+            },
+            "4" : {
+                "title" : "RM POS",
+                "description" : "A PHP Based simple POS application using mysql, JS, JQuery",
+                "imgFile" : "rmpos.png"
+            }
+        }
     },
 
     "tamil" : {
         "greet" : "வணக்கம்! நான் தான்",
         "name"  : "அஜ்மல் உசேன்",
-        "position"  : "வலை வடிவமைப்பாளன், தலைமை நுண் பொறியாளனாக <br>எச்செவெறியா எடுகேஷன்ஸ் பிரைவேட் லிமிடெட் <br>நிறுவனத்தில் பணிபுரிகின்றேன்.",
+        "position"  : "வலை வடிவமைப்பாளன், தலைமை நுண் பொறியாளனாக <br><text data-toggle='tooltip' data-placement='right' title='Echevariea Educations Private Limited'>எச்செவெறியா எடுகேஷன்ஸ் பிரைவேட் லிமிடெட்</text> <br>நிறுவனத்தில் பணிபுரிகின்றேன்.",
         "rightarrow" : "படைப்புக்களை பார்வையிட<br>இங்கு சொடுக்கவும்",
         "downarrow" : "மேலும் அறிய கீழே செல்லவும்",
-        "aboutme"   :  "என் பெயர் அஜ்மல் உசேன் மற்றும் நான் ஒரு சுய-கற்பிக்கப்பட்ட வலை வடிவமைப்பாளர். மீனாட்சி சுந்தரராஜன் பொறியியல் கல்லூரியில் கம்ப்யூட்டர் சயின்ஸ் மற்றும் இன்ஜினியரிங் துறையில் இளங்கலை பட்டப்படிப்பை முடித்திருக்கிறேன். தரமணி சிபிடி கல்லூரியில் எலெக்ட்ரானிக்ஸ் அண்ட் கம்யூனிகேஷன் இன்ஜினியரிங் துறையில் டிப்ளமோ முடித்திருக்கிறேன். நான் வலை வடிவமைப்பதில் போதுமான திறமைகளை வைத்திருக்கிறேன், என் கற்பனையை வடிவமைத்து அதை வாழ்க்கைக்கு கொண்டு வருகிறேன். இங்கே குறிப்பிட்டுள்ள எனது அனைத்து திறன்களும் வலைப்பதிவுகள், யூடியூப் வீடியோக்கள், github repos மற்றும் stackoverflow மூலமாக எனது சொந்த முயற்ச்சியில் கற்றுக் கற்றுக்கொண்டேன்."
+        "leftarrow" : "பின்னே செல்ல சொடுக்கவும் ",
+        "aboutme"   :  "என் பெயர் அஜ்மல் உசேன் மற்றும் நான் ஒரு சுய-கற்பிக்கப்பட்ட வலை வடிவமைப்பாளர். மீனாட்சி சுந்தரராஜன் பொறியியல் கல்லூரியில் கம்ப்யூட்டர் சயின்ஸ் மற்றும் இன்ஜினியரிங் துறையில் இளங்கலை பட்டப்படிப்பை முடித்திருக்கிறேன். தரமணி சிபிடி கல்லூரியில் எலெக்ட்ரானிக்ஸ் அண்ட் கம்யூனிகேஷன் இன்ஜினியரிங் துறையில் டிப்ளமோ முடித்திருக்கிறேன். நான் வலை வடிவமைப்பதில் போதுமான திறமைகளை வைத்திருக்கிறேன், என் கற்பனையை வடிவமைத்து அதை வாழ்க்கைக்கு கொண்டு வருகிறேன். இங்கே குறிப்பிட்டுள்ள எனது அனைத்து திறன்களும் வலைப்பதிவுகள், யூடியூப் வீடியோக்கள், github repos மற்றும் stackoverflow மூலமாக எனது சொந்த முயற்ச்சியில் கற்றுக் கற்றுக்கொண்டேன்.",
+        "myworks"   : "என்னுடைய படைப்புகள்",
+        "myworks-categories"   : [ "வலை வடிவமைப்புகள்", "மொபைல் செயலி வடிவமைப்புகள்", "வலை செயலி வடிவமைப்புகள்" ],
+        "myworks-webdesigns" : {
+            "0" : {
+                "title" : "Thirukkural",
+                "description" : "Using JSON and JS",
+                "imgFile" : "Thirukkural.png"
+            },
+            "1" : {
+                "title" : "MSEC",
+                "description" : "Just Redisgn of my college site using CSS, JS",
+                "imgFile" : "MSEC.png"
+            },
+            "2" : {
+                "title" : "Hussain Lodge",
+                "description" : "Just Lodge information site using CSS, JS",
+                "imgFile" : "hl.png"
+            },
+            "3" : {
+                "title" : "SGS Pluss",
+                "description" : "A github page fo SGSPlus using CSS, JS",
+                "imgFile" : "SGSPLUSS.png"
+            },
+            "4" : {
+                "title" : "RM POS",
+                "description" : "A PHP Based simple POS application using mysql, JS, JQuery",
+                "imgFile" : "rmpos.png"
+            }
+        }
     }
 }

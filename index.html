@@ -4,7 +4,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+    
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
@@ -18,6 +18,7 @@
 
     <!-- overlayscrollbar -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/overlayscrollbars/1.7.2/css/OverlayScrollbars.min.css" integrity="sha256-m0dmPBw+hWUlsAZJfwG+CM6yfVvKxAa3Un7mNaTDQe4=" crossorigin="anonymous" />
+    <script src="js/theme.js"></script>
 
     <link rel="stylesheet" href="css/ajmal.css">
 
@@ -54,11 +55,11 @@
                 <a href="#" class="btn btn-myWorks"><span class="btn-myWorks-text"></span><div class="right-arrow"></div></a>
               </div>
             </div>
-            <div class="row justify-content-center">
-              <div class="col-md-12 text-center ">
+            <!-- <div class="row justify-content-center">
+              <div class="col-md-12 text-center "> -->
                   <a href="#" class="btn btn-scrollDown"><span class="btn-scrollDown-text"></span><div class="down-arrow"></div></a>
-              </div>
-            </div>
+              <!-- </div>
+            </div> -->
           </div>
       </section>
   
@@ -72,9 +73,28 @@
         </div>
       </section>
     </div>
-    <!-- <div class="myworks">
 
-    </div> -->
+    <div class="myworks">
+      <section>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-2 vertical-nav w-100" style="height: 100vh;">
+              <div class="pageTitle mt-3 text-center"></div>
+              <nav class="nav flex-column mt-5 myworksCategories">
+                <!-- <a class="nav-link active" href="#!">Web Designs</a> -->
+              </nav>
+              <a href="#!" class="btn btn-mySelf position-absolute fixed-bottom">
+                <span class="btn-mySelf-text"></span>
+                <div class="left-arrow"></div>
+              </a>
+            </div>
+            <div class="col-md-9 scrollable pt-5 mx-auto">
+              <div class="card-columns myworksCards"></div>              
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
 
 
     <!-- Optional JavaScript -->
