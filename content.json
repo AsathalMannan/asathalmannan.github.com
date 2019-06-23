@@ -2,7 +2,7 @@
     "english" : {
         "greet" : "Hi ! I'm",
         "name"  : "Ajmal Hussain",
-        "position"  : "Web Designer, Tech Head at<br>Echevariea Educations Private Limited",
+        "position"  : "Web Designer, Tech Head at<br>Echeveriea Educations Private Limited",
         "rightarrow" : "Click to view My Works",
         "downarrow" : "Scroll down to know more",
         "leftarrow" : "Click to go back",
@@ -41,7 +41,7 @@
     "tamil" : {
         "greet" : "வணக்கம்! நான் தான்",
         "name"  : "அஜ்மல் உசேன்",
-        "position"  : "வலை வடிவமைப்பாளன், தலைமை நுண் பொறியாளனாக <br><text data-toggle='tooltip' data-placement='right' title='Echevariea Educations Private Limited'>எச்செவெறியா எடுகேஷன்ஸ் பிரைவேட் லிமிடெட்</text> <br>நிறுவனத்தில் பணிபுரிகின்றேன்.",
+        "position"  : "வலை வடிவமைப்பாளன், தலைமை நுண் பொறியாளனாக <text data-toggle='tooltip' data-placement='right' title='Echeveriea Educations Private Limited'>எச்செவெறியா எடுகேஷன்ஸ் பிரைவேட் லிமிடெட்</text> நிறுவனத்தில் பணிபுரிகின்றேன்.",
         "rightarrow" : "படைப்புக்களை பார்வையிட<br>இங்கு சொடுக்கவும்",
         "downarrow" : "மேலும் அறிய கீழே செல்லவும்",
         "leftarrow" : "பின்னே செல்ல சொடுக்கவும் ",

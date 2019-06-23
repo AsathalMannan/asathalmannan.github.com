@@ -7,7 +7,10 @@ function activateDarkMode() {
         '--vertical-splitline': 'rgba(255, 255, 255, 0.5)',
         '--right-arrow': 'url(\'../img/right-arrow-light.svg\')',
         '--down-arrow': 'url(\'../img/down-arrow-light.svg\')',
-        '--left-arrow': 'url(\'../img/left-arrow-light.svg\')'
+        '--left-arrow': 'url(\'../img/left-arrow-light.svg\')',
+        '--dribbble': 'url(\'../img/icons8-dribbble-circled-filled-50-light.png\')',
+        '--github': 'url(\'../img/icons8-github-filled-50-light.png\')',
+        '--linkedin': 'url(\'../img/icons8-linkedin-circled-filled-50-light.png\')'
     }
 
     // window.darkMode = true;
@@ -25,7 +28,10 @@ function activateDarkMode() {
         '--vertical-splitline': 'rgba(0, 0, 0, 0.5)',
         '--right-arrow': 'url(\'../img/right-arrow.svg\')',
         '--down-arrow': 'url(\'../img/down-arrow.svg\')',
-        '--left-arrow': 'url(\'../img/left-arrow.svg\')'
+        '--left-arrow': 'url(\'../img/left-arrow.svg\')',
+        '--dribbble': 'url(\'../img/icons8-dribbble-circled-filled-50.png\')',
+        '--github': 'url(\'../img/icons8-github-filled-50.png\')',
+        '--linkedin': 'url(\'../img/icons8-linkedin-circled-filled-50.png\')'
     }
 
     // window.darkMode = false;
