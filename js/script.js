@@ -123,7 +123,7 @@ $(document).ready(function(){
 
     $(".myworksCards").empty();
     $.each( engContent['myworks-webdesigns'], function( i, val ) {
-      $(".myworksCards").append('<div id=#"'+ i +'" class="card">'+
+      $(".myworksCards").append('<div id="no'+ i +'" class="card">'+
       '<img class="card-img-top shadow" src="img/works/thumb/'+ val['imgFile'] +'" alt="'+ val['title'] +'">'+
       '<div class="card-body">'+
         '<h4 class="card-title">'+ val['title'] +'</h4>'+

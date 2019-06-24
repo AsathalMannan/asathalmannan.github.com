@@ -91,6 +91,7 @@ body.tamil{
 	line-height: 22px;
 	opacity: 0.5;
 	margin-top: 1.5em;
+	margin-left: auto;
 }
 
 #top .top-title-block .profile-title span:first-child.tamil{
@@ -151,6 +152,7 @@ body.tamil{
 	position: absolute;
 	width: 230px;
 	height: 292px;
+	margin-right: unset;
 	margin-left: 3.5em;
 	transform: skew(-.362rad);
 	border-radius: 10px;
@@ -230,6 +232,8 @@ body.tamil{
 		line-height: 16px;
 		opacity: 0.5;
 		margin-top: 1.5em;
+		margin-left: auto;
+		margin-right: auto;
 	}
 
 	#top .top-title-block .profile-title span:first-child.tamil{
@@ -244,6 +248,8 @@ body.tamil{
 		font-size: 12px;
 		opacity: 0.5;
 		margin-top: 1.5em;
+		margin-left: auto;
+		margin-right: auto;
 	}
 
 	#top .top-title-block .profile-pic-container{
@@ -252,7 +258,8 @@ body.tamil{
 		height: 280px;
 		border-radius: 50%;
 		transform: skew(0rad);
-		margin-left: 0;
+		margin-left: auto;
+		margin-right: auto;
 		left: auto;
 		right: auto;
 		margin-top: 2em;
@@ -275,6 +282,11 @@ body.tamil{
 		margin-left: auto;
 		margin-right: auto;
 	}
+
+	.btn-myWorks{
+		text-align: center !important;
+	}
+	
 }
 
 /* about section */
@@ -474,6 +486,11 @@ body.tamil{
 	border-radius: 0;
 }
 
+.myworks .myworksCards .card{
+	margin-right: auto;
+	margin-left: auto;
+}
+
 .myworks .card .card-body{
 	padding: 3em 0em;
 }
@@ -483,10 +500,35 @@ body.tamil{
 	font-weight: 700;
 	width: inherit;
 	word-wrap: break-word;
+	text-align: left;
 }
 
 .myworks .card .card-body .card-text{
 	font-size: 12px;
 	width: inherit;
 	word-wrap: break-word;
+	text-align: left;
+}
+
+@media (max-width: 576px) {
+	.myworks .myworksCards .card{
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+	.myworks .card .card-body .card-title{
+		font-size: 18px;
+		font-weight: 700;
+		width: inherit;
+		word-wrap: break-word;
+		text-align: center;
+	}
+	
+	.myworks .card .card-body .card-text{
+		font-size: 12px;
+		width: inherit;
+		word-wrap: break-word;
+		text-align: center;
+	}
+	
 }
