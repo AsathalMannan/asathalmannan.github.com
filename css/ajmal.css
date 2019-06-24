@@ -35,6 +35,16 @@ body.tamil{
 	opacity: 0.8;
 }
 
+.alert{
+	width: 50%;
+}
+
+@media (max-width: 576px) {
+	.alert{
+		width: 75%;
+	}
+}
+
 /* myself */
 .myself{
 	width: 100%;
