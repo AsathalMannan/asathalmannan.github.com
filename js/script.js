@@ -197,17 +197,17 @@ $(".themeSwitch").on("click", function(e){
   }
 });
 
-var e = $('.myself');
-e.touch();
-e.on("swipeLeft", function(){
-  revealMyWorks();
-});
+// var e = $('.myself');
+// e.touch();
+// e.on("swipeLeft", function(){
+//   revealMyWorks();
+// });
 
-var f = $('.myworks');
-f.touch();
-f.on("swipeRight", function(){
-  revealMySelf();
-});
+// var f = $('.myworks');
+// f.touch();
+// f.on("swipeRight", function(){
+//   revealMySelf();
+// });
 
 $(function(){
   $('[data-toggle="tooltip"]').tooltip();

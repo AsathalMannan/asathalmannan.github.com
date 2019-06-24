@@ -21,6 +21,8 @@ function activateDarkMode() {
       item.name = "light";
     });
 
+    $('meta[name=theme-color]').attr("content", "#000000");
+
     // window.darkMode = true;
     for(k in darkTheme) {
       rootElement.style.setProperty(k, darkTheme[k])
@@ -48,6 +50,8 @@ function activateDarkMode() {
       item.innerHTML = "Dark";
       item.name = "dark";
     });
+
+    $('meta[name=theme-color]').attr("content", "#ffffff");
 
     // window.darkMode = false;
     for(k in lightTheme) {
