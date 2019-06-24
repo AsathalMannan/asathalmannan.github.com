@@ -1,8 +1,11 @@
+var themeBtn = document.querySelectorAll('.themeSwitch');
 function activateDarkMode() {
     const rootElement = document.querySelector(':root')
     const darkTheme = {
         '--text-color': '#ffffff',
+        '--alt-text-color': '#000000',
         '--background-color': '#000000',
+        '--alt-background-color': '#ffffff',
         '--vertical-nav': '#090909',
         '--vertical-splitline': 'rgba(255, 255, 255, 0.5)',
         '--right-arrow': 'url(\'../img/right-arrow-light.svg\')',
@@ -12,6 +15,11 @@ function activateDarkMode() {
         '--github': 'url(\'../img/icons8-github-filled-50-light.png\')',
         '--linkedin': 'url(\'../img/icons8-linkedin-circled-filled-50-light.png\')'
     }
+
+    themeBtn.forEach(function(item) {
+      item.innerHTML = "Light";
+      item.name = "light";
+    });
 
     // window.darkMode = true;
     for(k in darkTheme) {
@@ -23,7 +31,9 @@ function activateDarkMode() {
     const rootElement = document.querySelector(':root')
     const lightTheme = {
         '--text-color': '#000000',
+        '--alt-text-color': '#ffffff',
         '--background-color': '#ffffff',
+        '--alt-background-color': '#000000',
         '--vertical-nav': '#f8f9fa',
         '--vertical-splitline': 'rgba(0, 0, 0, 0.5)',
         '--right-arrow': 'url(\'../img/right-arrow.svg\')',
@@ -33,6 +43,11 @@ function activateDarkMode() {
         '--github': 'url(\'../img/icons8-github-filled-50.png\')',
         '--linkedin': 'url(\'../img/icons8-linkedin-circled-filled-50.png\')'
     }
+
+    themeBtn.forEach(function(item) {
+      item.innerHTML = "Dark";
+      item.name = "dark";
+    });
 
     // window.darkMode = false;
     for(k in lightTheme) {
@@ -57,17 +72,13 @@ function activateDarkMode() {
     if(isLightMode) activateLightMode()
     if(isNotSpecified || hasNoSupport) {
       console.log('You specified no preference for a color scheme or your browser does not support it. I Schedule dark mode during night time.')
-      // activateLightMode();
-      // window.darkMode = false;
 
       now = new Date();
       hour = now.getHours();
       if (hour < 4 || hour >= 16) {
         activateDarkMode();
-        window.darkMode = true;
       }else{
-          activateLightMode();
-          window.darkMode = false;
+        activateLightMode();
       }
     }
   }
