@@ -338,13 +338,11 @@ body.tamil{
 	0% {
 	  -webkit-transform: translateX(0);
 			  transform: translateX(0);
-			  will-change: transform;
 	  opacity: 1;
 	}
 	100% {
 	  -webkit-transform: translateX(-100vw);
 			  transform: translateX(-100vw);
-			  will-change: transform;
 	  opacity: 0;
 	}
   }
@@ -352,13 +350,11 @@ body.tamil{
 	0% {
 	  -webkit-transform: translateX(0);
 			  transform: translateX(0);
-			  will-change: transform;
 	  opacity: 1;
 	}
 	100% {
 	  -webkit-transform: translateX(-100vw);
 			  transform: translateX(-100vw);
-			  will-change: transform;
 	  opacity: 0;
 	}
   }
@@ -374,13 +370,11 @@ body.tamil{
 	0% {
 		-webkit-transform: translateX(100vw);
 				transform: translateX(100vw);
-				will-change: transform;
 		opacity: 0;
 	}
 	100% {
 		-webkit-transform: translateX(0);
 				transform: translateX(0);
-				will-change: transform;
 		opacity: 1;
 	}
 }
@@ -388,13 +382,11 @@ body.tamil{
 	0% {
 		-webkit-transform: translateX(100vw);
 				transform: translateX(100vw);
-				will-change: transform;
 		opacity: 0;
 	}
 	100% {
 		-webkit-transform: translateX(0);
 				transform: translateX(0);
-				will-change: transform;
 		opacity: 1;
 	}
 }
@@ -408,13 +400,11 @@ body.tamil{
 	0% {
 		-webkit-transform: translateX(0);
 				transform: translateX(0);
-				will-change: transform;
 		opacity: 1;
 	}
 	100% {
 		-webkit-transform: translateX(1000px);
 				transform: translateX(1000px);
-				will-change: transform;
 		opacity: 0;
 	}
 }
@@ -422,13 +412,11 @@ body.tamil{
 	0% {
 		-webkit-transform: translateX(0);
 				transform: translateX(0);
-				will-change: transform;
 		opacity: 1;
 	}
 	100% {
 		-webkit-transform: translateX(1000px);
 				transform: translateX(1000px);
-				will-change: transform;
 		opacity: 0;
 	}
 }
@@ -442,13 +430,11 @@ body.tamil{
 	0% {
 		-webkit-transform: translateX(-1000px);
 				transform: translateX(-1000px);
-				will-change: transform;
 		opacity: 0;
 	}
 	100% {
 		-webkit-transform: translateX(0);
 				transform: translateX(0);
-				will-change: transform;
 		opacity: 1;
 	}
 }
@@ -456,13 +442,11 @@ body.tamil{
 	0% {
 		-webkit-transform: translateX(-1000px);
 				transform: translateX(-1000px);
-				will-change: transform;
 		opacity: 0;
 	}
 	100% {
 		-webkit-transform: translateX(0);
 				transform: translateX(0);
-				will-change: transform;
 		opacity: 1;
 	}
 }  
