@@ -13,27 +13,32 @@
             "0" : {
                 "title" : "Thirukkural",
                 "description" : "Using JSON and JS",
-                "imgFile" : "Thirukkural.png"
+                "imgFile" : "Thirukkural.png",
+                "web": "https://thirukkural.ajmalhussain.in"
             },
             "1" : {
                 "title" : "MSEC",
                 "description" : "Just Redisgn of my college site using CSS, JS",
-                "imgFile" : "MSEC.png"
+                "imgFile" : "MSEC.png",
+                "web": "https://msec.ajmalhussain.in"
             },
             "2" : {
                 "title" : "Hussain Lodge",
                 "description" : "Just Lodge information site using CSS, JS",
-                "imgFile" : "hl.png"
+                "imgFile" : "hl.png",
+                "web": "https://hl.ajmalhussain.in"
             },
             "3" : {
                 "title" : "SGS Pluss",
                 "description" : "A github page fo SGSPlus using CSS, JS",
-                "imgFile" : "SGSPLUSS.png"
+                "imgFile" : "SGSPLUSS.png",
+                "web": "https://sgspluss.ajmalhussain.in"
             },
             "4" : {
                 "title" : "RM POS",
                 "description" : "A PHP Based simple POS application using mysql, JS, JQuery",
-                "imgFile" : "rmpos.png"
+                "imgFile" : "rmpos.png",
+                "web": "#"
             }
         }
     },

@@ -68,17 +68,24 @@ function activateDarkMode() {
     window.matchMedia("(prefers-color-scheme: dark)").addListener(e => e.matches && activateDarkMode())
     window.matchMedia("(prefers-color-scheme: light)").addListener(e => e.matches && activateLightMode())
   
-    if(isDarkMode) activateDarkMode()
-    if(isLightMode) activateLightMode()
+    if(isDarkMode){
+      activateDarkMode();
+      $(".notification-text").html("System Wide Dark theme enabled!");
+    } 
+    if(isLightMode){
+      activateLightMode();
+      $(".notification-text").html("System Wide Light theme enabled!");
+    } 
     if(isNotSpecified || hasNoSupport) {
       console.log('You specified no preference for a color scheme or your browser does not support it. I Schedule dark mode during night time.')
-
       now = new Date();
       hour = now.getHours();
       if (hour < 4 || hour >= 16) {
         activateDarkMode();
+        $(".notification-text").html("<stong>Time Based</strong> Dark theme selected!");
       }else{
         activateLightMode();
+        $(".notification-text").html("<stong>Time Based</strong> Light theme selected!");
       }
     }
   }

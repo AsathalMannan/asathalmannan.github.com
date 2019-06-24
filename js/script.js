@@ -77,6 +77,9 @@ function revealMySelf(){
 
 $(document).ready(function(){
   setColorScheme();
+  setTimeout(function() {
+    $(".alert").alert('close');
+  }, 1500);
 
   var fullContent = null;
   var requestURL = '../content.json';
