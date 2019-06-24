@@ -273,8 +273,8 @@ body.tamil{
 
 	#top .top-title-block .profile-pic-container{
 		position: relative;
-		width: 280px;
-		height: 280px;
+		width: 220px;
+		height: 220px;
 		border-radius: 50%;
 		transform: skew(0rad);
 		margin-left: auto;
@@ -287,8 +287,8 @@ body.tamil{
 	#top .top-title-block .profile-pic-container > .profile-pic{
 		background: url('../img/pic-sm.svg') no-repeat center center;
 		background-size: contain;
-		width: 100%;
-		height: 100%;
+		width: 220px;
+		height: 220px;
 		position: relative;
 		transform: skew(0rad);
 		z-index: -1;
@@ -338,11 +338,13 @@ body.tamil{
 	0% {
 	  -webkit-transform: translateX(0);
 			  transform: translateX(0);
+			  will-change: transform;
 	  opacity: 1;
 	}
 	100% {
 	  -webkit-transform: translateX(-100vw);
 			  transform: translateX(-100vw);
+			  will-change: transform;
 	  opacity: 0;
 	}
   }
@@ -350,11 +352,14 @@ body.tamil{
 	0% {
 	  -webkit-transform: translateX(0);
 			  transform: translateX(0);
+			  will-change: transform;
+
 	  opacity: 1;
 	}
 	100% {
 	  -webkit-transform: translateX(-100vw);
 			  transform: translateX(-100vw);
+			  will-change: transform;
 	  opacity: 0;
 	}
   }
@@ -370,11 +375,13 @@ body.tamil{
 	0% {
 		-webkit-transform: translateX(100vw);
 				transform: translateX(100vw);
+				will-change: transform;
 		opacity: 0;
 	}
 	100% {
 		-webkit-transform: translateX(0);
 				transform: translateX(0);
+				will-change: transform;
 		opacity: 1;
 	}
 }
@@ -382,11 +389,13 @@ body.tamil{
 	0% {
 		-webkit-transform: translateX(100vw);
 				transform: translateX(100vw);
+				will-change: transform;
 		opacity: 0;
 	}
 	100% {
 		-webkit-transform: translateX(0);
 				transform: translateX(0);
+				will-change: transform;
 		opacity: 1;
 	}
 }
@@ -400,11 +409,13 @@ body.tamil{
 	0% {
 		-webkit-transform: translateX(0);
 				transform: translateX(0);
+				will-change: transform;
 		opacity: 1;
 	}
 	100% {
 		-webkit-transform: translateX(1000px);
 				transform: translateX(1000px);
+				will-change: transform;
 		opacity: 0;
 	}
 }
@@ -412,11 +423,13 @@ body.tamil{
 	0% {
 		-webkit-transform: translateX(0);
 				transform: translateX(0);
+				will-change: transform;
 		opacity: 1;
 	}
 	100% {
 		-webkit-transform: translateX(1000px);
 				transform: translateX(1000px);
+				will-change: transform;
 		opacity: 0;
 	}
 }
@@ -430,11 +443,13 @@ body.tamil{
 	0% {
 		-webkit-transform: translateX(-1000px);
 				transform: translateX(-1000px);
+				will-change: transform;
 		opacity: 0;
 	}
 	100% {
 		-webkit-transform: translateX(0);
 				transform: translateX(0);
+				will-change: transform;
 		opacity: 1;
 	}
 }
@@ -442,11 +457,13 @@ body.tamil{
 	0% {
 		-webkit-transform: translateX(-1000px);
 				transform: translateX(-1000px);
+				will-change: transform;
 		opacity: 0;
 	}
 	100% {
 		-webkit-transform: translateX(0);
 				transform: translateX(0);
+				will-change: transform;
 		opacity: 1;
 	}
 }  
