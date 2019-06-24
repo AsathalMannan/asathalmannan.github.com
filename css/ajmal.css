@@ -64,6 +64,14 @@ body.tamil{
 	/* overflow-x: hidden; */
 }
 
+#top .themeSwitch{
+	background: var(--alt-background-color);
+	border-radius: 10px;
+	padding: 0.1em 0.5em;
+	color: var(--alt-text-color);
+	font-size: 12px;
+}
+
 #top .top-title-block{
 	margin-top: 8em;
 	position: relative;
@@ -185,6 +193,7 @@ body.tamil{
 
 .btn-myWorks{
 	text-align: right !important;
+	width: 50%;
 }
 
 .btn-scrollDown{
@@ -285,6 +294,7 @@ body.tamil{
 
 	.btn-myWorks{
 		text-align: center !important;
+		width: 100%;
 	}
 	
 }
@@ -318,11 +328,13 @@ body.tamil{
 	0% {
 	  -webkit-transform: translateX(0);
 			  transform: translateX(0);
+			  will-change: transform;
 	  opacity: 1;
 	}
 	100% {
 	  -webkit-transform: translateX(-100vw);
 			  transform: translateX(-100vw);
+			  will-change: transform;
 	  opacity: 0;
 	}
   }
@@ -330,11 +342,13 @@ body.tamil{
 	0% {
 	  -webkit-transform: translateX(0);
 			  transform: translateX(0);
+			  will-change: transform;
 	  opacity: 1;
 	}
 	100% {
 	  -webkit-transform: translateX(-100vw);
 			  transform: translateX(-100vw);
+			  will-change: transform;
 	  opacity: 0;
 	}
   }
@@ -350,11 +364,13 @@ body.tamil{
 	0% {
 		-webkit-transform: translateX(100vw);
 				transform: translateX(100vw);
+				will-change: transform;
 		opacity: 0;
 	}
 	100% {
 		-webkit-transform: translateX(0);
 				transform: translateX(0);
+				will-change: transform;
 		opacity: 1;
 	}
 }
@@ -362,11 +378,13 @@ body.tamil{
 	0% {
 		-webkit-transform: translateX(100vw);
 				transform: translateX(100vw);
+				will-change: transform;
 		opacity: 0;
 	}
 	100% {
 		-webkit-transform: translateX(0);
 				transform: translateX(0);
+				will-change: transform;
 		opacity: 1;
 	}
 }
@@ -380,11 +398,13 @@ body.tamil{
 	0% {
 		-webkit-transform: translateX(0);
 				transform: translateX(0);
+				will-change: transform;
 		opacity: 1;
 	}
 	100% {
 		-webkit-transform: translateX(1000px);
 				transform: translateX(1000px);
+				will-change: transform;
 		opacity: 0;
 	}
 }
@@ -392,11 +412,13 @@ body.tamil{
 	0% {
 		-webkit-transform: translateX(0);
 				transform: translateX(0);
+				will-change: transform;
 		opacity: 1;
 	}
 	100% {
 		-webkit-transform: translateX(1000px);
 				transform: translateX(1000px);
+				will-change: transform;
 		opacity: 0;
 	}
 }
@@ -410,11 +432,13 @@ body.tamil{
 	0% {
 		-webkit-transform: translateX(-1000px);
 				transform: translateX(-1000px);
+				will-change: transform;
 		opacity: 0;
 	}
 	100% {
 		-webkit-transform: translateX(0);
 				transform: translateX(0);
+				will-change: transform;
 		opacity: 1;
 	}
 }
@@ -422,16 +446,22 @@ body.tamil{
 	0% {
 		-webkit-transform: translateX(-1000px);
 				transform: translateX(-1000px);
+				will-change: transform;
 		opacity: 0;
 	}
 	100% {
 		-webkit-transform: translateX(0);
 				transform: translateX(0);
+				will-change: transform;
 		opacity: 1;
 	}
 }  
 
 /* my works */
+
+.myworks{
+	user-select: none; 
+}
 
 .btn-mySelf-text{
 	font-size: 12px;

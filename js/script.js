@@ -49,28 +49,37 @@ var animationEvent = whichAnimationEvent();
 
 $(".btn-myWorks").click(function(e){
   e.preventDefault();
+  revealMyWorks();
+});
+
+function revealMyWorks(){
   $('.myself').addClass('slide-out-left').css('z-index', '-1');
   $('.myworks').addClass('slide-in-right').css('z-index', '1');
   $('.myself').on(animationEvent, function(e) {
     $(this).removeClass('slide-out-left');
     $('.myworks').removeClass('slide-in-right');
   });
-});
+}
 
 $(".btn-mySelf").click(function(e){
   e.preventDefault();
-  // console.log("btn myself clicked");
+  revealMySelf();
+});
+
+function revealMySelf(){
   $('.myworks').addClass('slide-out-right').css('z-index', '-1');
   $('.myself').addClass('slide-in-left').css('z-index', '1');
   $('.myworks').on(animationEvent, function(e) {
-    // console.log("myself animation eneded");
     $(this).removeClass('slide-out-right');
     $('.myself').removeClass('slide-in-left');
   });
-});
+}
 
 $(document).ready(function(){
   setColorScheme();
+  setTimeout(function() {
+    $(".alert").alert('close');
+  }, 1500);
 
   var fullContent = null;
   var requestURL = '../content.json';
@@ -93,6 +102,7 @@ $(document).ready(function(){
         break;
       case "tamil":
         loadTamil();
+        break;
     }
   });
 
@@ -172,6 +182,31 @@ $(document).ready(function(){
 
     $('[data-toggle="tooltip"]').tooltip();
   };
+});
+
+$(".themeSwitch").on("click", function(e){
+  e.preventDefault();
+  var switchTo = $(".themeSwitch").attr("name");
+  switch (switchTo){
+    case "dark":
+      activateDarkMode();
+      break;
+    case "light":
+      activateLightMode();
+      break;
+  }
+});
+
+var e = $('.myself');
+e.touch();
+e.on("swipeLeft", function(){
+  revealMyWorks();
+});
+
+var f = $('.myworks');
+f.touch();
+f.on("swipeRight", function(){
+  revealMySelf();
 });
 
 $(function(){

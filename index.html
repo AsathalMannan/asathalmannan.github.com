@@ -18,7 +18,6 @@
 
     <!-- overlayscrollbar -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/overlayscrollbars/1.7.2/css/OverlayScrollbars.min.css" integrity="sha256-m0dmPBw+hWUlsAZJfwG+CM6yfVvKxAa3Un7mNaTDQe4=" crossorigin="anonymous" />
-    <script src="js/theme.js"></script>
 
     <link rel="stylesheet" href="css/ajmal.css">
 
@@ -31,6 +30,10 @@
             <div class="row">
               <div class="col-6 col-md-12 text-left text-md-right">
                 <a href="#" class="btn langSwitch" name="tamil" style="font-size: 12px; padding-right: 20px;"></a>
+                <a href="#" class="btn themeSwitch d-none d-md-inline-block"></a>
+              </div>
+              <div class="col-6 col-md-12 text-right d-block d-md-none">
+                <a href="#" class="btn themeSwitch mt-2"></a>
               </div>
             </div>
             <div class="row top-title-block">
@@ -81,8 +84,9 @@
                 <div class="left-arrow"></div>
               </a>
             </div>
-            <div class="col-12 col-md-10 order-1 order-md-2 scrollable pt-5 mx-auto text-center" style="height: 100vh;">
-              <div class="pageTitle mt-3 text-center d-block d-md-none mb-4"></div>
+            <div class="col-12 col-md-10 order-1 order-md-2 scrollable pt-2 pt-md-5 mx-auto text-center" style="height: 100vh;">
+              <div class="btn btn-mySelf d-block d-md-none text-center">Click here or Swipe Right to go back<div class="left-arrow"></div></div>
+              <div class="btn pageTitle mt-5 text-center d-block d-md-none mb-4"></div>
               <div class="card-columns myworksCards text-center"></div>              
             </div>
           </div>
@@ -90,13 +94,21 @@
       </section>
     </div>
 
+    <div class="alert alert-info alert-dismissible fade show fixed-bottom mx-auto" role="alert">
+      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">×</span>
+      </button>
+      <span class="notification-text"></span>
+    </div>    
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touch/1.1.0/jquery.touch.min.js" integrity="sha256-+GK2VI+CGLDosO6FSAGl6bZCxAiSXuvw1vRGBPhQtbY=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/overlayscrollbars/1.7.2/js/jquery.overlayScrollbars.min.js" integrity="sha256-dLej6VrgcTwJb93tRRTC+jKMO2x9pBfJaERxGvRqYSw=" crossorigin="anonymous"></script>
+    <script src="js/theme.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>
