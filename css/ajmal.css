@@ -11,6 +11,7 @@ html, body{
 	width: 100%;
 	margin: 0;
 	overflow-x: hidden;
+		-webkit-overflow-scrolling: touch;
 	font-family: 'Karla', sans-serif;
 }
 
@@ -53,6 +54,7 @@ body.tamil{
 	background: var(--background-color);
 	color: var(--text-color);
 	height: 100%;
+		-webkit-overflow-scrolling: touch;
 }
 
 .myworks{
@@ -306,7 +308,73 @@ body.tamil{
 		text-align: center !important;
 		width: 100%;
 	}
+}
+
+@media (max-height: 640px) {
+	#top .top-title-block{
+		margin-top: 1em;
+	}
+
+	#top .top-title-block .profile-title span:first-child{
+		font-size: 18px;
+		line-height: 24px;
+	}
 	
+	#top .top-title-block .profile-title span:nth-child(2){
+		font-size: 24px;
+		line-height: 36px;
+	}
+	
+	#top .top-title-block .profile-title span:nth-child(3){
+		font-size: 14px;
+		line-height: 16px;
+		opacity: 0.5;
+		margin-top: 1.5em;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	#top .top-title-block .profile-title span:first-child.tamil{
+		font-size: 14px;
+	}
+	
+	#top .top-title-block .profile-title span:nth-child(2).tamil{
+		font-size: 18px;
+	}
+	
+	#top .top-title-block .profile-title span:nth-child(3).tamil{
+		font-size: 12px;
+		opacity: 0.5;
+		margin-top: 1.5em;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+
+	#top .top-title-block .profile-pic-container{
+		position: relative;
+		width: 180px;
+		height: 180px;
+		border-radius: 50%;
+		transform: skew(0rad);
+		margin-left: auto;
+		margin-right: auto;
+		left: auto;
+		right: auto;
+		margin-top: 1em;
+	}
+
+	#top .top-title-block .profile-pic-container > .profile-pic{
+		background: url('../img/pic-sm.svg') no-repeat center center;
+		background-size: contain;
+		width: 180px;
+		height: 180px;
+		position: relative;
+		transform: skew(0rad);
+		z-index: -1;
+		left: auto;
+		right: auto;
+	}
 }
 
 /* about section */
@@ -489,6 +557,10 @@ body.tamil{
 	font-weight: bold;
 }
 
+.myworks .scrollable{
+	-webkit-overflow-scrolling: touch;
+}
+
 .left-arrow{
 	background: var(--left-arrow) no-repeat center center;
 	width: 129px;
@@ -551,6 +623,20 @@ body.tamil{
 	text-align: left;
 }
 
+.myworks .card .card-body .liveLink{
+	background: var(--link) no-repeat center center;
+	background-size: contain;
+	width: 20px;
+	height: 20px;
+}
+
+.myworks .card .card-body .codeFork{
+	background: var(--codefork) no-repeat center center;
+	background-size: contain;
+	width: 20px;
+	height: 20px;
+}
+
 @media (max-width: 576px) {
 	.myworks .myworksCards .card{
 		margin-right: auto;
@@ -562,14 +648,14 @@ body.tamil{
 		font-weight: 700;
 		width: inherit;
 		word-wrap: break-word;
-		text-align: center;
+		text-align: left;
 	}
 	
 	.myworks .card .card-body .card-text{
 		font-size: 12px;
 		width: inherit;
 		word-wrap: break-word;
-		text-align: center;
+		text-align: left;
 	}
 	
 }

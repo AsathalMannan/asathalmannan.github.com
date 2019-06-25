@@ -1,33 +1,6 @@
 /* Ajmal Hussain Portfolio site's JavaScript - 2018*/
 /* Author: Ajmal Hussain, https://ajmalhussain.in */
 
-// $('body').scrollspy({ target: '#vertical-nav' })
-
-// // navbar menu smooth scroller
-// $('a[href^="#"]').on('click', function(event) {
-//     var target = $(this.getAttribute('href'));
-//     if( target.length ) {
-//         event.preventDefault();
-//         $('html, body').stop().animate({
-//             scrollTop: target.offset().top
-//         }, 1000);
-//     }
-// });
-
-
-// // expand section
-// $('.expand-btn').click(function(){
-//     if ($(".collapsing-row").height() != "51vh") {
-//         console.log("entered if");
-//         $('.collapsing-row').animate({height:'90vh'}, 500);
-        
-//     }
-//     else if ($(".collapsing-row").height() != "90vh"){
-//         console.log("entered else");
-//         $('.collapsing-row').animate({height:'51vh'}, 500);
-//     }
-// });
-
 function whichAnimationEvent(){
   var t, el = document.createElement("fakeelement");
 
@@ -110,77 +83,54 @@ $(document).ready(function(){
     $(".langSwitch").attr("name", "tamil");
     $(".langSwitch").html("தமிழ்");
     $("html").attr("lang", "en");
-
     $("body, .greet, .myname, .position, .btn-myWorks-text, .btn-scrollDown-text").removeClass("tamil");
-
-    var engContent = fullContent['english'];
-    $(".greet").text(engContent['greet']);
-    $(".myname").text(engContent['name']);
-    $(".position").html(engContent['position']);
-    $(".btn-myWorks-text").html(engContent['rightarrow']);
-    $(".btn-scrollDown-text").html(engContent['downarrow']);
-    $(".btn-mySelf-text").html(engContent['leftarrow']);
-    $(".aboutme").html(engContent['aboutme']);
-    // myworks
-    $(".pageTitle").html(engContent['myworks']);
-
-    $(".myworksCategories").empty();
-    engContent['myworks-categories'].forEach(function(e){
-      $(".myworksCategories").append('<a class="nav-link" href="#!">'+ e +'</a>')
-    });
-
-    $(".myworksCategories > .nav-link:first-child").addClass("active");
-
-    $(".myworksCards").empty();
-    $.each( engContent['myworks-webdesigns'], function( i, val ) {
-      $(".myworksCards").append('<div id="no'+ i +'" class="card">'+
-      '<img class="card-img-top shadow" src="img/works/thumb/'+ val['imgFile'] +'" alt="'+ val['title'] +'">'+
-      '<div class="card-body">'+
-        '<h4 class="card-title">'+ val['title'] +'</h4>'+
-        '<p class="card-text">'+ val['description'] +'</p>'+
-      '</div>'+
-    '</div>');
-
-    });
+    loadContent('english');
   };
 
   function loadTamil(){
     $(".langSwitch").attr("name", "english");
     $(".langSwitch").html("English");
     $("html").attr("lang", "ta");
-
     $("body, .greet, .myname, .position, .btn-myWorks-text, .btn-scrollDown-text").addClass("tamil");
+    loadContent('tamil');    
+    $('[data-toggle="tooltip"]').tooltip();
+  };
 
-    var tamilContent = fullContent['tamil'];
-    $(".greet").text(tamilContent['greet']);
-    $(".myname").text(tamilContent['name']);
-    $(".position").html(tamilContent['position']);
-    $(".btn-myWorks-text").html(tamilContent['rightarrow']);
-    $(".btn-scrollDown-text").html(tamilContent['downarrow']);
-    $(".btn-mySelf-text").html(tamilContent['leftarrow']);
-    $(".aboutme").html(tamilContent['aboutme']);
+  function loadContent(lang){
+    var content = fullContent[lang];
+    $(".greet").text(content['greet']);
+    $(".myname").text(content['name']);
+    $(".position").html(content['position']);
+    $(".btn-myWorks-text").html(content['rightarrow']);
+    $(".btn-scrollDown-text").html(content['downarrow']);
+    $(".btn-mySelf-text").html(content['leftarrow']);
+    $(".aboutme").html(content['aboutme']);
     // myworks
-    $(".pageTitle").html(tamilContent['myworks']);
+    $(".pageTitle").html(content['myworks']);
 
     $(".myworksCategories").empty();
-    tamilContent['myworks-categories'].forEach(function(e){
+    content['myworks-categories'].forEach(function(e){
       $(".myworksCategories").append('<a class="nav-link" href="#!">'+ e +'</a>')
     });
 
     $(".myworksCategories > .nav-link:first-child").addClass("active");
 
     $(".myworksCards").empty();
-    $.each( tamilContent['myworks-webdesigns'], function( i, val ) {
-      $(".myworksCards").append('<div id=#"'+ i +'" class="card">'+
+    $.each( content['myworks-webdesigns'], function( i, val ) {
+      $(".myworksCards").append('<div id="no'+ i +'" class="card">'+
       '<img class="card-img-top shadow" src="img/works/thumb/'+ val['imgFile'] +'" alt="'+ val['title'] +'">'+
-      '<div class="card-body">'+
-        '<h4 class="card-title">'+ val['title'] +'</h4>'+
-        '<p class="card-text">'+ val['description'] +'</p>'+
+      '<div class="card-body d-flex flex-row aling-items-center justify-content-between">'+
+        '<div class="d-inline-flex flex-column">'+
+          '<h4 class="card-title">'+ val['title'] +'</h4>'+
+          '<p class="card-text">'+ val['description'] +'</p>'+
+        '</div>'+
+        '<div class="d-inline-flex align-items-center">'+
+            '<a href="'+ val['web'] +'" class="nav-link m-2 liveLink" target="_blank"></a>'+
+            '<a href="'+ val['repo'] +'" class="nav-link ml-2 mt-2 mb-2 mr-0 codeFork" target="_blank"></a>'+
+        '</div>'+
       '</div>'+
     '</div>');
     });
-
-    $('[data-toggle="tooltip"]').tooltip();
   };
 });
 
@@ -196,18 +146,6 @@ $(".themeSwitch").on("click", function(e){
       break;
   }
 });
-
-// var e = $('.myself');
-// e.touch();
-// e.on("swipeLeft", function(){
-//   revealMyWorks();
-// });
-
-// var f = $('.myworks');
-// f.touch();
-// f.on("swipeRight", function(){
-//   revealMySelf();
-// });
 
 $(function(){
   $('[data-toggle="tooltip"]').tooltip();

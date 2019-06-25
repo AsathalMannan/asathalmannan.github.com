@@ -13,7 +13,9 @@ function activateDarkMode() {
         '--left-arrow': 'url(\'../img/left-arrow-light.svg\')',
         '--dribbble': 'url(\'../img/icons8-dribbble-circled-filled-50-light.png\')',
         '--github': 'url(\'../img/icons8-github-filled-50-light.png\')',
-        '--linkedin': 'url(\'../img/icons8-linkedin-circled-filled-50-light.png\')'
+        '--linkedin': 'url(\'../img/icons8-linkedin-circled-filled-50-light.png\')',
+        '--link': 'url(\'../img/icons8-link-50-light.png\')',
+        '--codefork': 'url(\'../img/icons8-code-fork-50-light.png\')'
     }
 
     themeBtn.forEach(function(item) {
@@ -43,7 +45,9 @@ function activateDarkMode() {
         '--left-arrow': 'url(\'../img/left-arrow.svg\')',
         '--dribbble': 'url(\'../img/icons8-dribbble-circled-filled-50.png\')',
         '--github': 'url(\'../img/icons8-github-filled-50.png\')',
-        '--linkedin': 'url(\'../img/icons8-linkedin-circled-filled-50.png\')'
+        '--linkedin': 'url(\'../img/icons8-linkedin-circled-filled-50.png\')',
+        '--link': 'url(\'../img/icons8-link-50.png\')',
+        '--codefork': 'url(\'../img/icons8-code-fork-50.png\')'
     }
 
     themeBtn.forEach(function(item) {
