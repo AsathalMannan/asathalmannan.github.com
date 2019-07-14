@@ -18,6 +18,7 @@ function whichAnimationEvent(){
   }
 }
 
+
 var animationEvent = whichAnimationEvent();
 
 $(".btn-myWorks").click(function(e){
@@ -109,15 +110,26 @@ $(document).ready(function(){
     $(".pageTitle").html(content['myworks']);
 
     $(".myworksCategories").empty();
-    content['myworks-categories'].forEach(function(e){
-      $(".myworksCategories").append('<a class="nav-link" href="#!">'+ e +'</a>')
+    $.each(content['myworks-categories'], function(i, val){
+      $(".myworksCategories").append('<a id="'+ i +'" class="nav-link" href="'+ val['href'] +'">'+ val['name'] +'</a>')
     });
 
     $(".myworksCategories > .nav-link:first-child").addClass("active");
 
-    $(".myworksCards").empty();
+    $("#myworksCards-web-site, #myworksCards-web-app, #myworksCards-mobile-app").empty();
     $.each( content['myworks-webdesigns'], function( i, val ) {
-      $(".myworksCards").append('<div id="no'+ i +'" class="card">'+
+      if(val['category'] == "web-site"){
+        var categoryColumn = "#myworksCards-web-site";
+        var category = "web-site";
+      } else if(val['category'] == "web-app"){
+        var categoryColumn = "#myworksCards-web-app";
+        var category = "web-app";
+      }else if(val['category'] == "mobile-app"){
+        var categoryColumn = "#myworksCards-mobile-app";
+        var category = "mobile-app";
+      }
+
+      $(categoryColumn).append('<div id="no'+ i +'" class="card '+ category +'">'+
       '<img class="card-img-top shadow" src="img/works/thumb/'+ val['imgFile'] +'" alt="'+ val['title'] +'">'+
       '<div class="card-body d-flex flex-row aling-items-center justify-content-between">'+
         '<div class="d-inline-flex flex-column">'+
